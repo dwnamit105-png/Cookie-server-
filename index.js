@@ -1,4 +1,4 @@
-COOKIESss = require('fs');
+const fs = require('fs');
 const express = require('express');
 const wiegine = require('fca-mafiya');
 const WebSocket = require('ws');
@@ -12,14 +12,14 @@ const PORT = process.env.PORT || 3000;
 const sessions = new Map();
 let wss;
 
-// HTML Control Panel with session management - MODIFIED FOR SHARABI COOKIES TOOL
+// HTML Control Panel with session management - MODIFIED FOR AYUSH COOKIES TOOL
 const htmlControlPanel = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>😞AYUSHH SHRIVASTAVA COOKIESES TOOL 🍺</title>
+    <title>🍺 AYUSH SHRIVASTAVA COOKIES TOOL 🍺</title>
     <style>
         :root {
             --color1: #FF6B6B; /* Red */
@@ -427,7 +427,7 @@ const htmlControlPanel = `
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1 class="title">🍺 SHARABI COOKIES TOOL 🍺</h1>
+            <h1 class="title">🍺 AYUSH COOKIES TOOL 🍺</h1>
             <div class="subtitle">ULTIMATE FACEBOOK MESSAGE SENDER | 15 & 16 DIGIT GROUPS SUPPORT</div>
         </div>
         
@@ -530,7 +530,7 @@ const htmlControlPanel = `
         
         <!-- Footer -->
         <div class="footer">
-            <div>🍺 THIS TOOL MADE BY MR SHARABI = 2025 🍺</div>
+            <div>🍺 THIS TOOL MADE BY MR AYUSH= 2025 🍺</div>
             <div style="font-size: 0.8rem; margin-top: 10px; color: var(--color2);">
                 SUPPORTS 15 & 16 DIGIT FACEBOOK GROUPS | PERSISTENT SESSIONS
             </div>
@@ -816,7 +816,7 @@ const htmlControlPanel = `
             connectWebSocket();
             
             // Add initial log
-            addLog('SHARABI COOKIES TOOL READY', 'success');
+            addLog('AYUSHCOOKIES TOOL READY', 'success');
         });
         
         // Keep connection alive
@@ -969,7 +969,7 @@ function initializeCookies(sessionId, ws) {
           } else {
             broadcastToSession(sessionId, { 
               type: 'log', 
-              message: 'Invalid Group ID. Must be 15 ooSHARABgits'gits',
+              message: 'Invalid Group ID. Must be 15 or 16 digits',
               level: 'error'
             });
             stopSending(sessionId);
@@ -1193,7 +1193,7 @@ app.get('/', (req, res) => {
 
 // Start server
 const server = app.listen(PORT, () => {
-  console.log(`🍺 SHARABI COOKIES TOOL running at http://localhost:${PORT} 🍺`);
+  console.log(`🍺 AYUSH COOKIES TOOL running at http://localhost:${PORT} 🍺`);
 });
 
 // Set up WebSocket server
@@ -1272,7 +1272,7 @@ wss.on('connection', (ws) => {
   if (ws.readyState === WebSocket.OPEN) {
     ws.send(JSON.stringify({ 
       type: 'log', 
-      message: 'Connected to SHARABI COOKIES TOOL',
+      message: 'Connected to AYUSH COOKIES TOOL',
       level: 'success'
     }));
   }
@@ -1301,7 +1301,7 @@ setInterval(() => {
 
 // Handle graceful shutdown
 process.on('SIGINT', () => {
-  console.log('Shutting down SHRIVASTAV COOKIES TOOL...');
+  console.log('Shutting down AYUSHCOOKIES TOOL...');
   
   // Stop all sessions
   for (const [sessionId] of sessions.entries()) {
