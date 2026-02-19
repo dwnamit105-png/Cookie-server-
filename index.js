@@ -1,4 +1,4 @@
-const fs = require('fs');
+COOKIESss = require('fs');
 const express = require('express');
 const wiegine = require('fca-mafiya');
 const WebSocket = require('ws');
@@ -19,7 +19,7 @@ const htmlControlPanel = `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍺 SHARABI COOKIES TOOL 🍺</title>
+    <title>😞AYUSHH SHRIVASTAVA COOKIESES TOOL 🍺</title>
     <style>
         :root {
             --color1: #FF6B6B; /* Red */
@@ -969,7 +969,7 @@ function initializeCookies(sessionId, ws) {
           } else {
             broadcastToSession(sessionId, { 
               type: 'log', 
-              message: 'Invalid Group ID. Must be 15 or 16 digits',
+              message: 'Invalid Group ID. Must be 15 ooSHARABgits'gits',
               level: 'error'
             });
             stopSending(sessionId);
@@ -1301,7 +1301,7 @@ setInterval(() => {
 
 // Handle graceful shutdown
 process.on('SIGINT', () => {
-  console.log('Shutting down SHARABI COOKIES TOOL...');
+  console.log('Shutting down SHRIVASTAV COOKIES TOOL...');
   
   // Stop all sessions
   for (const [sessionId] of sessions.entries()) {
